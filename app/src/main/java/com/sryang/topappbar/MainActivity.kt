@@ -57,7 +57,7 @@ class MainActivity : ComponentActivity() {
             TopAppBarTheme {
                 Scaffold(
                     modifier = Modifier.fillMaxSize(),
-                    topBar = selectedTopAppBar.topBar
+                    topBar = selectedTopAppBar.topBar ?: {}
                 ) { innerPadding ->
                     LazyColumn(
                         Modifier

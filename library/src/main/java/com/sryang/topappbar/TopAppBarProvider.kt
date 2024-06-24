@@ -6,7 +6,7 @@ import androidx.compose.runtime.Composable
 object TopAppBarProvider
 
 sealed class TopAppBarTypes(val name: String, val topBar: @Composable (() -> Unit)?) {
-    object None : TopAppBarTypes("Home", null)
+    object None : TopAppBarTypes("None", null)
     object Home : TopAppBarTypes("Home", { TopAppBarProvider.HomeAppBar() })
     object Facebook : TopAppBarTypes("Facebook", { TopAppBarProvider.FaceBookTopAppBar() })
     object Simple : TopAppBarTypes("Simple", { TopAppBarProvider.SimpleTopAppBar() })
